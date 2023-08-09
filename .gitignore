@@ -2,3 +2,5 @@
 /learn_wgpu/Cargo.lock
 /snippets/target
 /snippets/Cargo.lock
+/sparse_voxel_octree/target
+/sparse_voxel_octree/Cargo.lock

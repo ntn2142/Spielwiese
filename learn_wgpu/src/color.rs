@@ -5,7 +5,7 @@ pub struct RGBA {
     pub a: f64,
 }
 impl RGBA {
-    pub fn to_HSLA(self) -> HSLA {
+    pub fn to_hsla(self) -> HSLA {
         let RGBA { r, g, b, a } = self;
 
         let max = r.max(g).max(b);
@@ -57,7 +57,7 @@ pub struct HSLA {
     pub a: f64,
 }
 impl HSLA {
-    pub fn to_RGBA(self) -> RGBA {
+    pub fn to_rgba(self) -> RGBA {
         let HSLA { h, s, l, a } = self;
         let c = (1.0 - (2.0 * l - 1.0).abs()) * s;
         let x = c * (1.0 - (h * 6.0 % 2.0 - 1.0).abs());
