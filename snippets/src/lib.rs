@@ -37,6 +37,7 @@ pub fn graham_scan(mut points: Vec<(f64, f64)>) -> Vec<(f64, f64)> {
 }
 
 fn kruskal_mst(vertices: u32, mut edges: Vec<(u32, u32, u32)>) -> Vec<(u32, u32, u32)> {
+
     fn find(parent: &mut Vec<u32>, i: u32) -> u32 {
         if parent[i as usize] != i {
             parent[i as usize] = find(parent, parent[i as usize]);
